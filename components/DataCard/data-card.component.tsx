@@ -31,11 +31,11 @@ interface ScreapedEntryInterface {
     url: string
 }
 
-interface DataCardInterface {
+interface DataCardProps {
     entry: ScreapedEntryInterface
 }
 
-export default function DataCard<DataCardInterface>({ entry }) {
+export default function DataCard({ entry }: DataCardProps) {
     const classes = useStyles()
     const bull = <span className={classes.bullet}>•</span>
 
@@ -56,11 +56,8 @@ export default function DataCard<DataCardInterface>({ entry }) {
                             </Typography>
                             <div className="h2 card-title">{entry.title}</div>
                         </div>
-                        <div className='mt-3'>
-                            <Typography
-                                className=''
-                                color="textSecondary"
-                            >
+                        <div className="mt-3">
+                            <Typography className="" color="textSecondary">
                                 author: {entry.author}
                             </Typography>
                             <div className="d-flex justify-content-between h6">
