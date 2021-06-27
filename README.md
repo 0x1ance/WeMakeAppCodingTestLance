@@ -33,7 +33,7 @@ All the scraped data is being displayed on React using Material UI in Responsive
 
 ## Known Issues 
 
-1. The projected is deployed to heroku on https://we-make-app-coding-test-lance.herokuapp.com/, but there's some issue of running appolo micro server on heroku therefore the scraper && graphql is not working. Have to use local environment for testing.
+1. The projected is deployed to heroku on https://we-make-app-coding-test-lance.herokuapp.com/, but there's some issue of running appolo micro server on heroku therefore the scraper && graphql is not working. Have to use local environment for testing through yarn dev
 
 ## Improvement Expected
 
