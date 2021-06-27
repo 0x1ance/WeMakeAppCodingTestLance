@@ -29,7 +29,7 @@ The scraped data is in following format:
     url: string
 }
 
-All the scraped data is being displayed on React using Material UI.
+All the scraped data is being displayed on React using Material UI in Responsive Way.
 
 ## Known Issues & Improvement Expected
 

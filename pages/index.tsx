@@ -7,7 +7,7 @@ import Head from 'next/head'
 import DataCard from '../components/DataCard/data-card.component'
 import Grid from '@material-ui/core/Grid'
 
-type ScreapedEntry {
+interface ScreapedEntry {
     title: string
     points: number
     author: string
@@ -16,7 +16,7 @@ type ScreapedEntry {
     url: string
 }
 
-type HomeProps {
+interface HomeProps {
     data: ScreapedEntry[]
 }
 
@@ -27,7 +27,7 @@ export default function Home({ data }: HomeProps) {
         const sortedData: ScreapedEntry[] = data.sort((a, b) => b.numOfComments - a.numOfComments)
         setDisplayData(sortedData)
     }, [data])
-    
+
     return (
         <div>
             <Head>
