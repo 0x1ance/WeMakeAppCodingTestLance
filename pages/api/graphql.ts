@@ -20,11 +20,14 @@ const resolvers = {
     Query: {
         data() {
             return scrapedData
-        }
+        },
     },
 }
 
-export const schema = makeExecutableSchema({ typeDefs, resolvers })
+export const schema = makeExecutableSchema({
+    typeDefs,
+    resolvers,
+})
 
 export const config = {
     api: {

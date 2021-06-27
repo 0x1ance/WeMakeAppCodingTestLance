@@ -31,7 +31,11 @@ The scraped data is in following format:
 
 All the scraped data is being displayed on React using Material UI in Responsive Way.
 
-## Known Issues & Improvement Expected
+## Known Issues 
+
+1. The projected is deployed to heroku on https://we-make-app-coding-test-lance.herokuapp.com/, but there's some issue of running appolo micro server on heroku therefore the scraper && graphql is not working. Have to use local environment for testing.
+
+## Improvement Expected
 
 1. Currently the scraper will scrape the data from target website everytime the GraphQL service is launched, leading to long launch time. Scraping is expected to be done in advance and data should be stored in the database in the later stage, hence to avoid repetitive workload of server.
 
