@@ -37,9 +37,8 @@ interface DataCardProps {
 
 export default function DataCard({ entry }: DataCardProps) {
     const classes = useStyles()
-    const bull = <span className={classes.bullet}>•</span>
 
-    console.log('url: ', entry.url)
+    // console.log('url: ', entry.url)
 
     return (
         <div className="h-100">

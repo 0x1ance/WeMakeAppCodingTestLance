@@ -24,8 +24,12 @@ export default function Home({ data }: HomeProps) {
     const [displayData, setDisplayData] = useState<ScreapedEntry[]>([])
 
     useEffect(() => {
-        const sortedData: ScreapedEntry[] = data.sort((a, b) => b.numOfComments - a.numOfComments)
-        setDisplayData(sortedData)
+        if (data && data.length > 0) {
+            const sortedData: ScreapedEntry[] = data.sort(
+                (a, b) => b.numOfComments - a.numOfComments
+            )
+            setDisplayData(sortedData)
+        }
     }, [data])
 
     return (
