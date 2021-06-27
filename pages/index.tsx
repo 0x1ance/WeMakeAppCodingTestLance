@@ -36,7 +36,7 @@ export default function Home({ data }: HomeProps) {
         <div>
             <Head>
                 <title>Lance's Work</title>
-                <link rel="shortcut icon" href="/static/favicon.ico" />
+                <link rel="shortcut icon" href="../static/favicon.ico" />
                 <meta
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
